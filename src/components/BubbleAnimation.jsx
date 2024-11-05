@@ -28,7 +28,7 @@ const BubbleAnimation = () => {
 
   const handleDoubleClick = () => {
     setIsBurst(true);
-    setTimeout(() => setIsBurst(false), 500); // Reset after animation
+    setTimeout(() => setIsBurst(false), 500); 
   };
 
   return (
