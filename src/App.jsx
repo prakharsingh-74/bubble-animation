@@ -3,6 +3,8 @@ import './App.css'
 import BubbleAnimation from './components/BubbleAnimation'
 import About from './components/About'
 import Footer from './components/Footer'
+import Services from './components/Services'
+import Portfolio from './components/Portfolio'
 
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
     <>
      <div>
       <About/>
+      <Services/>
+      <Portfolio/>
       <BubbleAnimation/>
       <Footer/>
     </div>

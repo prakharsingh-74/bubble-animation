@@ -1,0 +1,26 @@
+.bubble {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 60%);
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.3), 
+                0 0 5px 2px rgba(255, 0, 150, 0.4),
+                0 0 5px 2px rgba(255, 200, 0, 0.3),
+                0 0 5px 2px rgba(0, 150, 255, 0.4);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Prevent interaction */
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .bubble.burst {
+    animation: burstAnimation 0.5s ease-out forwards;
+  }
+  
+  @keyframes burstAnimation {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(2); opacity: 0; }
+  }
+  

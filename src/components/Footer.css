@@ -1,0 +1,30 @@
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  footer:hover {
+    background: #e0f7fa; /* Soft background color change on hover */
+    transition: background 0.3s ease-in-out;
+  }
+  
+  footer p {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  footer p:hover {
+    color: #00796b; /* Change text color on hover */
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
